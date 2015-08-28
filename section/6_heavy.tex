@@ -1,0 +1,186 @@
+\section{Exchange of Heavy Scalar\label{sec6}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+In the previous two sections we studied a system with two non-identical heavy scalar particles interacting via the exchange of massless quanta with spin $0$, $1$ or $2$. For these three cases, the truncated forward-JWKB scattering amplitude has the same general form (see (\ref{AHN3}) and (\ref{AHN4})). We now consider a system with two non-identical heavy scalar particles that exchange heavy scalar quanta.
+
+We can repeat most of the steps as before to derive the path integral analogous to (\ref{FSeff}). The tensor $\kappa_{0}$ for a massive scalar is the same as for a massless scalar, so again we have $\kappa_{0} = 1$, $\nu_{0} = 1$ and thus $\mathcal{K}_{0} = 1$. Thus, the kinetic term for the mediating field $\varphi$ is
+\begin{equation}
+	S_{\text{kin}}[\varphi] = \frac{1}{2} \int \int \mathrm{d}x \mathrm{d}y \, \varphi(x) K_{M}(x|y) \varphi(y), \qquad K_{M}(x|y) \equiv \delta(x - y) \left(- \frac{1}{2} \partial^{2} + \frac{1}{2} M^{2} \right)
+\end{equation}
+Here $M$ is a constant with units of mass. The functional integral over $\varphi$ gives rise to interaction terms analogous to (\ref{S10}) and (\ref{S20}). Just as before, we will \textbf{ignore the contributions from the self-interactions}. The two-body interaction term is
+\begin{equation}
+	S_{2}[q_{A}, q_{B}] = g_{0}^{2} \int \int \mathrm{d}\tau_{A} \mathrm{d}\tau_{B} \, G_{M}[q_{A}(\tau_{A}) | q_{B}(\tau_{B})]
+\end{equation}
+where $G_{M} = (K_{M})^{-1}$ is the free massive scalar Green function.
+
+In the forward-JWKB approximation, we evaluate $S_{2}$ at the forward paths (\ref{fpaths}):
+\begin{equation}
+	\Sigma_{2} = S_{2}[f_{A}, f_{B}] = g_{0}^{2} \int \int \mathrm{d}\tau_{A} \mathrm{d}\tau_{B} \, G_{M}[f_{A}(\tau_{A}) | f_{B}(\tau_{B})]
+\end{equation}
+Recall the expression for $G_{M}$ in terms of a Schwinger integral:
+\begin{equation}
+	G_{M}(x|y) = M^{(D-2)} \int\limits_{0}^{\infty} \mathrm{d}T \left( - \frac{i}{T} \right)^{D/2} \exp{\left[ \frac{i}{2 T} M^{2}(y - x)^{2} - \frac{i T}{2} \right]}
+\end{equation}
+Since the separation of the particles is very large in the forward-JWKB approximation, we can still integrate over $(\tau_{A}, \tau_{B})$ with stationary methods. The result gives
+\begin{equation}
+	\Sigma_{2} \approx 2 \pi g_{0}^{2} \left[ \frac{T_{A} T_{B}}{\sqrt{x_{31}^{2} x_{42}^{2} - (x_{31} \cdot x_{42})^{2}}} \right] M^{(D - 4)} \int\limits_{0}^{\infty} \mathrm{d}T \left( - \frac{i}{T} \right)^{\Delta} \exp{\left[ \frac{i}{2 T} M^{2}B_{12}^{2} - \frac{i T}{2} \right]}
+\end{equation}
+with $\Delta = (D - 2) / 2$. In the regime $M^{2} B_{12}^{2} \rightarrow \infty$ (heavy messenger and large separations), the integral over $T$ is also done with stationary methods:
+\begin{equation}
+	\Sigma_{2} \approx -i \sqrt{2 \pi} \beta_{0} \rho_{0} M^{(D - 4)} \left( i M \sqrt{-B_{12}^{2}} \right)^{(3 - D)/2} \exp{\left( -i M \sqrt{-B_{12}^{2}}\right)} \label{Sigma2Massive}
+\end{equation}
+where we have used
+\begin{equation}
+	\beta_{0} = 2 \pi g_{0}^{2}, \qquad \rho_{0} = \frac{T_{A} T_{B}}{\sqrt{x_{31}^{2} x_{42}^{2} - (x_{31} \cdot x_{42})^{2}}}
+\end{equation}
+One can recognize $\Sigma_{2}$ in (\ref{Sigma2Massive}) as being proportional to a long-distance massive propagator in $D-2$ dimensions (i.e. given by the asymptotic expansion of the familiar Bessel function). The truncated on-shell forward-JWKB scattering amplitude gives
+\begin{equation}
+	\mathcal{A} = \delta(P) \left( \frac{1}{\rho_{0}} \right) \int \mathrm{d}B_{1 2} \, \exp{\left( - i B_{1 2} \cdot P_{1 2} \right)} \left[-1 + \exp{\left(i \Sigma_{2}\right)} \right] \label{DAvarphi}
+\end{equation}
+with $\Sigma_{2}$ given by (\ref{Sigma2Massive}) and we have subtracted the disconnected part. Note that unlike the massless exchange, with the massive exchange $\Sigma_{2}$ is not explicitly divergent when $D = 4$.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Three Spacetime Dimensions}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+When $D = 3$, we have
+\begin{equation}
+	\Sigma_{2} \approx -i \left( \frac{\sqrt{2 \pi} \beta_{0} \rho_{0}}{M} \right) \exp{\left( -i M \sqrt{-B_{12}^{2}}\right)}
+\end{equation}
+So then
+\begin{equation}
+	{-1} + \exp{(i \Sigma_{2})} = \sum_{L = 0}^{\infty} \frac{1}{L! (L+1)} \left( \frac{\sqrt{2 \pi} \beta_{0} \rho_{0}}{M} \right)^{(L+1)} \exp{\left( -i (L+1) M \sqrt{-B_{12}^{2}}\right)}
+\end{equation}
+which we recognize as the sum of one-dimensional massive scalar propagators with mass $(L+1)M$. Thus, after integration over $B_{12}$ we find
+\begin{equation}
+	\mathcal{A}(s, t) = \beta_{0} \delta(P) \sum_{L = 0}^{\infty} \frac{1}{L!} \left[ \frac{\sqrt{2 \pi} \beta_{0} \rho_{0}(s)}{M} \right]^{L} \left[ \frac{2}{(L+1)^{2} M^{2} - t} \right] \label{3Avarphi}
+\end{equation}
+This result has an infinite number of singularities given by $t = (L+1)^{2}M^{2}$, which can be recognized as the branch points of the $(L+1)$-mass branch cuts. We also have the singularities whenever $\rho_{0}(s_{*}) \rightarrow \infty$, which correspond to $s_{*} = (m_{A} \pm m_{B})^{2}$. It is interesting that instead of getting a whole branch cut (a continuum of singularities), in the forward-JWKB approximation we seem to only get the branch point (a single singularity).
+
+Using the relation
+\begin{equation}
+	\frac{2}{(L+1)^{2} M^{2} - t} = \frac{1}{\sqrt{t}} \left[ \frac{1}{(L+1)M - \sqrt{t}} - \frac{1}{(L+1)M + \sqrt{t}} \right]
+\end{equation}
+and the incomplete Euler Gamma function,
+\begin{equation}
+	\Gamma_{\text{inc}}(z, a) = \int_{0}^{a} \mathrm{d}T \left( \frac{1}{T} \right)^{1-z} \exp{(-T)} = a^{z} \sum_{n = 0}^{\infty} \frac{1}{n!} \frac{(-a)^{n}}{(n + z)}
+\end{equation}
+we can rewrite (\ref{3Avarphi}) as
+\begin{equation}
+	\mathcal{A}(s, t) = \delta(P) \left( \frac{\beta_{0}}{M \sqrt{t}} \right) \left[ \mathcal{R}_{+}(s, t) + \mathcal{R}_{-}(s, t) \right]
+\end{equation}
+where
+\begin{equation}
+	\mathcal{R}_{\pm}(s, t) \equiv \pm \left[ - \frac{\sqrt{2 \pi} \beta_{0} \rho_{0}(s)}{M} \right]^{R_{\pm}(t)} \Gamma_{\text{inc}}\left[ -R_{\pm}(t),  - \frac{\sqrt{2 \pi} \beta_{0} \rho_{0}(s)}{M} \right] \label{615}
+\end{equation}
+with
+\begin{equation}
+	R_{\pm}(t) \equiv -1 \pm \sqrt{\frac{t}{M^{2}}}
+\end{equation}
+This form of the amplitude is akin to Regge behavior, with the Regge poles being the multi-mass branch points.
+%The infinite sum in (\ref{3Avarphi}) can be evaluated in terms of hypergeometric functions after splitting the sum into even and odd values of $L$:
+%\begin{equation}
+%\begin{split}
+%	\mathcal{A}(s, t) = {}& \frac{Z_{A} Z_{B} \beta_{0} \delta(P)}{\sqrt{t} \left(M - \sqrt{t}\right)} {}_{1}F_{2}\left( \frac{1}{2} - \sqrt{\frac{t}{4M^{2}}}; \, \frac{1}{2}, \, \frac{3}{2} - \sqrt{\frac{t}{4M^{2}}}; \, \frac{\pi \beta_{0}^{2} \rho_{0}^{2}}{2 M^{2}} \right) \\
+%	&- \frac{Z_{A} Z_{B} \beta_{0} \delta(P)}{\sqrt{t} \left(M + \sqrt{t}\right)} {}_{1}F_{2}\left( \frac{1}{2} + \sqrt{\frac{t}{4M^{2}}}; \, \frac{1}{2}, \, \frac{3}{2} + \sqrt{\frac{t}{4M^{2}}}; \, \frac{\pi \beta_{0}^{2} \rho_{0}^{2}}{2 M^{2}} \right) \\
+%	&+ \frac{Z_{A} Z_{B} \beta_{0} \delta(P)}{\sqrt{t} \left(2M - \sqrt{t}\right)} \left( \frac{2\pi \beta_{0}^{2} \rho_{0}^{2}}{M^{2}} \right) {}_{1}F_{2}\left( 1 - \sqrt{\frac{t}{4M^{2}}}; \, \frac{3}{2}, \, 2 - \sqrt{\frac{t}{4M^{2}}}; \, \frac{\pi \beta_{0}^{2} \rho_{0}^{2}}{2 M^{2}} \right) \\
+%	&- \frac{Z_{A} Z_{B} \beta_{0} \delta(P)}{\sqrt{t} \left(2M + \sqrt{t}\right)} \left( \frac{2\pi \beta_{0}^{2} \rho_{0}^{2}}{M^{2}} \right) {}_{1}F_{2}\left( 1 + \sqrt{\frac{t}{4M^{2}}}; \, \frac{3}{2}, \, 2 + \sqrt{\frac{t}{4M^{2}}}; \, \frac{\pi \beta_{0}^{2} \rho_{0}^{2}}{2 M^{2}} \right)
+%\end{split}
+%\end{equation}
+%The hypergeometric function ${}_{1}F_{2}$ appearing in this expression should not to be confused with the more familiar Gaussian hypergeometric function ${}_{2}F_{1}$.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Five Spacetime Dimensions}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+We can set $D = 5$ in (\ref{Sigma2Massive}) and find no explicit divergences. However, as a precaution we work in $D = 5 - 4 \varepsilon$ with $\varepsilon > 0$. Just like we did before in $D = 4 + 2 \epsilon$, we extract the $D = 5$ coupling $\gamma_{0}$ by introducing a constant $\mu$ with units of mass:
+\begin{equation}
+	\beta_{0} = \gamma_{0} \mu^{4 \varepsilon}
+\end{equation}
+Note that $\gamma_{0}$ has units of mass. Then, $\Sigma_{2}$ becomes
+\begin{equation}
+	\Sigma_{2} \approx -i \sqrt{2 \pi} M\gamma_{0} \rho_{0} \left( \frac{\mu}{M} \right)^{4\varepsilon} \left(i M \sqrt{-B_{12}^{2}}\right)^{(2\varepsilon - 1)} \exp{\left(- i M \sqrt{-B_{12}^{2}}\right)}
+\end{equation}
+and thus
+\begin{equation}
+\begin{split}
+	{-1} + \exp{(i \Sigma_{2})} = \sum_{L = 0}^{\infty} \frac{1}{\Gamma(L + 2)} {}& \left[ \sqrt{2 \pi} M \gamma_{0} \rho_{0} \left( \frac{\mu}{M} \right)^{4\varepsilon} \right]^{(L+1)} \left(i M \sqrt{-B_{12}^{2}}\right)^{(L+1)(2\varepsilon - 1)} \\
+	&\times \exp{\left(- i (L+1) M \sqrt{-B_{12}^{2}}\right)}
+\end{split}
+\end{equation}
+In order to perform the $B_{12}$ integral in (\ref{DAvarphi}), we write the exponential in the second line as an infinite sum too. This leads to a double sum involving powers of $B_{12}$:
+\begin{equation}
+\begin{split}
+	{-1} + \exp{(i \Sigma_{2})} = \sum_{L = 0}^{\infty} \sum_{n = 0}^{\infty} {}& \frac{(-1)^{n}(L+1)^{(n - 1)}}{\Gamma(L + 1)\Gamma(n+1)} \left[ \sqrt{2 \pi} M \gamma_{0} \rho_{0} \left( \frac{\mu}{M} \right)^{4\varepsilon} \right]^{(L+1)} \\
+	&\times \left(\frac{1}{2}\right)^{\theta_{nL}} \left( \frac{2}{M^{2} B_{12}^{2}} \right)^{\theta_{nL}}
+\end{split}
+\end{equation}
+with
+\begin{equation}
+	\theta_{nL} \equiv \frac{(L+1)(1 - 2\varepsilon)}{2} - \frac{n}{2}
+\end{equation}
+Taking the Fourier transform of each power yields
+\begin{equation}
+\begin{split}
+	\mathcal{A} = \frac{1}{\rho_{0}} \left( \frac{1}{M^{2}} \right)^{(3 - 4\varepsilon)/2} \delta(P) \sum_{L = 0}^{\infty} \sum_{n = 0}^{\infty} {}& \frac{(-1)^{n}(L+1)^{(n - 1)}}{\Gamma(L + 1) \Gamma(n+1)} \left[ \sqrt{2 \pi} M \gamma_{0} \rho_{0} \left( \frac{\mu}{M} \right)^{4\varepsilon} \right]^{(L+1)} \\
+	&\times \left(\frac{1}{2}\right)^{\theta_{nL}} \frac{\Gamma(\omega_{nL})}{\Gamma(\theta_{nL})} \left( - \frac{2M^{2}}{t} \right)^{\omega_{nL}}
+\end{split}
+\end{equation}
+with
+\begin{equation}
+	\omega_{nL} \equiv \frac{3}{2} - 2\varepsilon - \theta_{nL}
+\end{equation}
+From this result, we anticipate a divergence whenever $\omega_{nL} = -l$ with $l = 0,1,2, \ldots$ or
+\begin{equation}
+	L = \frac{2 - 2\varepsilon + 2 l + n}{1 - 2\varepsilon}, \qquad l = 0, 1, 2, \ldots \qquad n = 0, 1, 2, \ldots
+\end{equation}
+Hence, if we take $\varepsilon \rightarrow 0$ we expect to find a divergence when $L \geq 2 $. To explicitly see this, we keep $L$ fixed and split the sum over $n$ into even and odd parts:
+\begin{equation}
+	\mathcal{A} = \frac{1}{M^{3}\rho_{0}} M^{4\varepsilon} \delta(P) \sum_{L = 0}^{\infty} \frac{1}{\Gamma(L + 1)} \left[ \sqrt{2 \pi} M \gamma_{0} \rho_{0} \left( \frac{\mu}{M} \right)^{4\varepsilon} \right]^{(L+1)} [\mathcal{E}_{L}(t) + \mathcal{O}_{L}(t)]
+\end{equation}
+We find
+\begin{align}
+	\mathcal{E}_{L}(t) = {}& \frac{2^{(2 \varepsilon - 1)(L + 1)/2}}{(L + 1)} \frac{\Gamma\left( \frac{2 - 2\varepsilon - (1 - 2\varepsilon) L}{2} \right)}{\Gamma\left( \frac{(L + 1)(1 - 2\varepsilon)}{2} \right)} \left( - \frac{2M^{2}}{t} \right)^{(2 - 2\varepsilon - (1 - 2\varepsilon)L)/2} \nonumber \\
+	&\times {}_{2}F_{1}\left( \frac{2 - 2\varepsilon - (1 - 2\varepsilon)L}{2}, \frac{1 + 2\varepsilon - (1 - 2\varepsilon)L}{2}; \frac{1}{2}; \frac{(L+1)^{2}M^{2}}{t} \right) \\
+	\mathcal{O}_{L}(t) = {}& - 2^{[(2 \varepsilon - 1)(L + 1) + 1]/2} \frac{\Gamma\left( \frac{3 - 2\varepsilon - (1 - 2\varepsilon)L}{2} \right)}{\Gamma \left( \frac{L(1 - 2\varepsilon) - 2\varepsilon}{2} \right)} \left( - \frac{2M^{2}}{t} \right)^{(3 - 2\varepsilon - (1 - 2\varepsilon)L)/2} \nonumber \\
+	&\times {}_{2}F_{1}\left( \frac{3 - 2\varepsilon - (1 - 2\varepsilon)L}{2}, \frac{2 + 2\varepsilon - (1 - 2\varepsilon)L}{2}; \frac{3}{2}; \frac{(L+1)^{2}M^{2}}{t} \right)
+\end{align}
+When $L = 0$ we find
+\begin{align}
+	\mathcal{E}_{0}(t) &= \sqrt{2} \left( - \frac{M^{2}}{t} \right)^{(1-\varepsilon)} \frac{\Gamma\left( 1 - \varepsilon \right)}{\Gamma\left( \frac{1 - 2\varepsilon}{2} \right)} {}_{2} F_{1} \left( 1 - \varepsilon, \frac{1 + 2\varepsilon}{2}; \frac{1}{2}; \frac{M^{2}}{t} \right) \\
+	\mathcal{O}_{0}(t) &= -\sqrt{8} \left( - \frac{M^{2}}{t} \right)^{(3 - 2\varepsilon)/2} \frac{\Gamma\left( \frac{3 - 2\varepsilon}{2} \right)}{\Gamma\left( - \varepsilon \right)} {}_{2} F_{1} \left( \frac{3 - 2\varepsilon}{2}, 1 + \varepsilon; \frac{3}{2}; \frac{M^{2}}{t} \right)
+\end{align}
+which are well-behaved in the $\varepsilon \rightarrow 0$ limit:
+\begin{equation}
+	\mathcal{E}_{0}(t) \rightarrow \sqrt{\frac{2}{\pi}}\frac{M^{2}}{M^{2} - t}, \qquad
+	\mathcal{O}_{0}(t) \rightarrow 0
+\end{equation}
+Indeed, we find the familiar tree-level contribution. For $L = 1$ and $\varepsilon \rightarrow 0$ we find
+\begin{align}
+	\mathcal{E}_{1}(t) &= \frac{\sqrt{\pi}}{4} \sqrt{- \frac{2M^{2}}{t}} \\
+	\mathcal{O}_{1}(t) &= \frac{1}{2\sqrt{2\pi}} \sqrt{\frac{4M^{2}}{t}} \operatorname{arctanh}{\left( \sqrt{\frac{4M^{2}}{t}} \right)}
+\end{align}
+However, starting with $L = 2$ we find a divergence near $\varepsilon = 0$:
+\begin{align}
+	\mathcal{E}_{2}(t) &= \frac{2^{(8\varepsilon - 3)/2}}{3} \left( - \frac{M^{2}}{t} \right)^{\varepsilon} \frac{\Gamma\left( \varepsilon \right)}{\Gamma\left( \frac{3 - 6\varepsilon}{2} \right)} {}_{2} F_{1} \left( \varepsilon, \frac{6 \varepsilon - 1}{2}; \frac{1}{2}; \frac{9M^{2}}{t} \right) \\
+	\mathcal{O}_{2}(t) &= -2^{(8\varepsilon - 1)/2} \left( - \frac{M^{2}}{t} \right)^{(1 + 2\varepsilon)/2} \frac{\Gamma\left( \frac{1 + 2\varepsilon}{2} \right)}{\Gamma\left( 1 - 3 \varepsilon \right)} {}_{2} F_{1} \left( 3\varepsilon, \frac{1 + 2\varepsilon}{2}; \frac{3}{2}; \frac{9M^{2}}{t} \right)
+\end{align}
+Taking the $\varepsilon \rightarrow 0$ limit leads to
+\begin{equation}
+	\mathcal{O}_{2}(t) = - \frac{\sqrt{\pi}}{2} \sqrt{-\frac{2M^{2}}{t}}
+\end{equation}
+but $\mathcal{E}_{2}$ has a divergent part. Using the identity
+\begin{equation}
+	\Gamma(a) {}_{2}F_{1}(a, b; c; z) = \Gamma(a) + \frac{\Gamma(c)}{\Gamma(b)} \sum_{n = 1}^{\infty} \frac{\Gamma(a + n) \Gamma(b + n)}{\Gamma(c + n)} \frac{z^{n}}{n!}
+\end{equation}
+leads to
+\begin{equation}
+	\mathcal{E}_{2}(t) \approx \frac{1}{3 \sqrt{2 \pi}} \left[ \left(- \frac{2M^{2}}{t} \right)^{\varepsilon}\Gamma(\varepsilon) - 2 \sqrt{\frac{9M^{2}}{t}} \operatorname{arctanh}{\left( \sqrt{\frac{9M^{2}}{t}} \right)} - \log{\left(1 - \frac{9 M^{2}}{t} \right)} \right]
+\end{equation}
+Similarly with $L = 3$: Taking the $\varepsilon \rightarrow 0$ limit leads to
+\begin{equation}
+	\mathcal{E}_{3}(t) = \sqrt{\pi} \sqrt{- \frac{2M^{2}}{t}} \left( 1 + \frac{t}{16M^{2}} \right)
+\end{equation}
+but $\mathcal{O}_{3}(t)$ has a divergent part,
+\begin{equation}
+\begin{split}
+	\mathcal{O}_{3}(t) \approx \frac{1}{3\sqrt{2 \pi}} &{} \left[ \left(- \frac{2M^{2}}{t} \right)^{2\varepsilon}\Gamma(2\varepsilon) - \left( \sqrt{\frac{16 M^{2}}{t}} + \sqrt{\frac{t}{16 M^{2}}} \right) \operatorname{arctanh}{\left( \sqrt{\frac{16M^{2}}{t}} \right)} \right. \\
+	& \qquad - \left. \log{\left(1 - \frac{16 M^{2}}{t} \right)} + 1 \right]
+\end{split}
+\end{equation}
+In general, for $L$ even and $L \geq 2$ we find that $\mathcal{E}_{L}(t)$ has a divergent part, and for $L$ odd and $L \geq 3$ we find that $\mathcal{O}_{L}(t)$ has a divergent part. Each of these divergent terms consist of a simple pole at $\varepsilon = 0$ (i.e. a term proportional to $\Gamma(n \varepsilon)$).
