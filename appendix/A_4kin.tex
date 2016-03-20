@@ -1,0 +1,116 @@
+\section{Four-point Kinematics\label{app1}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+We study the scattering of two non-identical massive scalar particles. The external states are labeled such that the $s$-channel process is elastic:
+\begin{equation}
+	\Phi_{1}(p_{1}) + \Phi_{2}(p_{2}) \longrightarrow \Phi_{1}(p_{3}) + \Phi_{2}(p_{4}).
+	\label{sChannel}
+\end{equation}
+Note that the $u$-channel process is also elastic:
+\begin{equation}
+	\Phi_{1}(p_{1}) + \bar{\Phi}_{2}(\bar{p}_{2}) \longrightarrow \Phi_{1}(p_{3}) + \bar{\Phi}_{2}(\bar{p}_{4});
+	\label{uChannel}
+\end{equation}
+but the $t$-channel process is inelastic:
+\begin{equation}
+	\Phi_{1}(p_{1}) + \bar{\Phi}_{1}(\bar{p}_{2}) \longrightarrow \bar{\Phi}_{2}(\bar{p}_{3}) + \Phi_{2}(p_{4}).
+	\label{tChannel}
+\end{equation}
+We will only consider the amplitude for the (\ref{sChannel}) process. The amplitude for the (\ref{uChannel}) process follows after setting $\bar{p}_{2} = -p_{4}$ and $\bar{p}_{4} = -p_{2}$, and the amplitude for the (\ref{tChannel}) process follows after setting $\bar{p}_{2} = -p_{3}$ and $\bar{p}_{3} = -p_{2}$.
+
+The four external energy-momentum vectors satisfy the on-shell constraints,
+\begin{equation}
+	p_{j}^{2} = - m_{j}^{2};
+\end{equation}
+the elasticity constraints,
+\begin{equation}
+	p_{1}^{2} = p_{3}^{2}, \qquad p_{2}^{2} = p_{4}^{2} \quad \Longrightarrow \quad m_{1} = m_{3}, \qquad m_{2} = m_{4}; \label{elas}
+\end{equation}
+and also the conservation constraint,
+\begin{equation}
+	p_{1} + p_{2} = p_{1} + p_{4}.
+\end{equation}
+We use the familiar Mandelstam energy-momentum invariants
+\begin{equation}
+	s = -(p_{1} + p_{2})^{2}, \qquad t = -(p_{1} - p_{3})^{2}, \qquad u = -(p_{1} - p_{4})^{2};
+\end{equation}
+which satisfy
+\begin{equation}
+	s + t + u = 2 m_{1}^{2} + 2 m_{2}^{2}.
+\end{equation}
+Note that $s$ and $u$ carry data from both particles, while $t$ carries data from a single particle.
+
+In the center-of-momentum frame, we write the energy-momentum vectors as
+\begin{equation}
+	p_{1} = \begin{pmatrix} E_{1} & \mathbf{p}_{1} \end{pmatrix}, \qquad p_{2} = \begin{pmatrix} E_{2} & -\mathbf{p}_{1} \end{pmatrix}, \qquad p_{3} = \begin{pmatrix} E_{3} & \mathbf{p}_{3} \end{pmatrix}, \qquad p_{4} = \begin{pmatrix} E_{4} & -\mathbf{p}_{3} \end{pmatrix}.
+\end{equation}
+It is easy to show that, in terms of $s$ and the masses $(m_{1}, m_{2})$, the magnitude of the spatial vectors $(\mathbf{p}_{1}, \mathbf{p}_{3})$ are given by
+\begin{equation}
+	|\mathbf{p}_{1}| = |\mathbf{p}_{3}| = \frac{\sqrt{\Lambda_{12}}}{2 \sqrt{s}}, \qquad \Lambda_{12} \equiv \left[s - (m_{1} - m_{2})^{2} \right] \left[s - (m_{1} + m_{2})^{2} \right];
+	\label{2Momenta}
+\end{equation}
+and the energies of the external states are given by
+\begin{equation}
+	E_{1} = E_{3} = \frac{s + (m_{1} - m_{2})(m_{1} + m_{2})}{2 \sqrt{s}}, \qquad E_{2} = E_{4} = \frac{s - (m_{1} - m_{2})(m_{1} + m_{2})}{2 \sqrt{s}}.
+	\label{4Energies}
+\end{equation}
+A relativistic particle with mass $m \geq 0$ and energy $E \geq m$ has a speed $|\mathbf{v}| \leq 1$ given by
+\begin{equation}
+	|\mathbf{v}| = \frac{\sqrt{E^{2} - m^{2}}}{E}.
+\end{equation}
+Thus, in the center-of-momentum frame the external states have speeds
+\begin{equation}
+\begin{split}
+	|\mathbf{v}_{1}| &= |\mathbf{v}_{3}| = \frac{\sqrt{\Lambda_{12}}}{s + (m_{1} - m_{2})(m_{1} + m_{2})}, \\
+	|\mathbf{v}_{2}| &= |\mathbf{v}_{4}| = \frac{\sqrt{\Lambda_{12}}}{s - (m_{1} - m_{2})(m_{1} + m_{2})}.
+\end{split} \label{4Speeds}
+\end{equation}
+and rapidities $\varphi_{j} \equiv \operatorname{artanh}{(|\mathbf{v}_{j}|)}$ given by
+\begin{equation}
+\begin{split}
+	\varphi_{1} &= \varphi_{3} = \frac{1}{2} \log{\left[ \frac{(m_{1} - m_{2})(m_{1} + m_{2}) + s + \sqrt{\Lambda_{12}}}{(m_{1} - m_{2})(m_{1} + m_{2}) + s - \sqrt{\Lambda_{12}}} \right]}, \\
+	\varphi_{2} &= \varphi_{4} = \frac{1}{2} \log{\left[ \frac{(m_{1} - m_{2})(m_{1} + m_{2}) - s - \sqrt{\Lambda_{12}}}{(m_{1} - m_{2})(m_{1} + m_{2}) - s + \sqrt{\Lambda_{12}}} \right]}.
+\end{split} \label{4Rapidities}
+\end{equation}
+Note that the sum of the incoming rapidities gives
+\begin{equation}
+	\varphi_{1} + \varphi_{2} = \frac{1}{2} \log{\left[ \frac{m_{1}^{2} + m_{2}^{2} - s - \sqrt{\Lambda_{12}}}{m_{1}^{2} + m_{2}^{2} - s + \sqrt{\Lambda_{12}}} \right]}.
+\end{equation}
+Using
+\begin{equation}
+	\frac{(m_{1} + m_{2})^{2} - s - \sqrt{\Lambda_{12}}}{(m_{1} + m_{2})^{2} - s + \sqrt{\Lambda_{12}}} = \frac{2m_{1}m_{2}}{m_{1}^{2} + m_{2}^{2} - s + \sqrt{\Lambda_{12}}} = \frac{m_{1}^{2} + m_{2}^{2} - s - \sqrt{\Lambda_{12}}}{2m_{1}m_{2}};
+\end{equation}
+we can also write
+\begin{equation}
+	\varphi_{1} + \varphi_{2} = \log{\left[ \frac{(m_{1} + m_{2})^{2} - s - \sqrt{\Lambda_{12}}}{(m_{1} + m_{2})^{2} - s + \sqrt{\Lambda_{12}}} \right]}.
+	\label{rap12}
+\end{equation}
+The cosine of the angle between $\mathbf{p}_{1}$ and $\mathbf{p}_{3}$ is given by
+\begin{equation}
+	z_{s} \equiv \cos(\theta_{s}) = \frac{\mathbf{p}_{1} \cdot \mathbf{p}_{3}}{|\mathbf{p}_{1}| |\mathbf{p}_{3}|} = \frac{(m_{1} - m_{2})^{2} (m_{1} + m_{2})^{2} - s (u - t)}{(m_{1} - m_{2})^{2} (m_{1} + m_{2})^{2} - s (u + t)}.
+	\label{z13rational}
+\end{equation}
+The angle $\theta_{s}$ is known as the scattering angle.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Physical Scattering Region}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Requiring each of the energies in (\ref{4Energies}) to be real and non-negative leads to the condition
+\begin{equation}
+	s \geq |m_{1} - m_{2}| (m_{1} + m_{2}).
+\end{equation}
+Indeed, the same requirements on the magnitudes in (\ref{2Momenta}) leads to a stronger condition:
+\begin{equation}
+	\Lambda_{12} \geq 0 \quad \Longrightarrow \quad s \geq (m_{1} + m_{2})^{2} > |m_{1} - m_{2}| (m_{1} + m_{2}).
+\end{equation}
+We must also require $z_{s}$ in (\ref{z13rational}) to satisfy
+\begin{equation}
+	{-1} \leq z_{s} \leq 1.
+\end{equation}
+This is equivalent to the conditions
+\begin{equation}
+	t \leq 0, \qquad s u \leq (m_{1} - m_{2})^{2} (m_{1} + m_{2})^{2}.
+\end{equation}
+Thus, the physical scattering region is defined by
+\begin{equation}
+	s \geq (m_{1} + m_{2})^{2}, \qquad t \leq 0, \qquad s u \leq (m_{1} - m_{2})^{2} (m_{1} + m_{2})^{2}.
+\end{equation}
+Since these relations involve Lorentz invariants, they hold on any reference frame related to the center-of-momentum frame by a Lorentz transformation.

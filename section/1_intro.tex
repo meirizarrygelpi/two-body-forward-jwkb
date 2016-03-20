@@ -6,15 +6,17 @@ Some years ago, a program was started by Alday \& Maldacena \cite{Alday:2007hr} 
 
 It is easy to wonder if analogous results can be obtained for less restrictive theories (i.e. other than planar, superconformal gauge theories with string duals). Halpern \& Siegel \cite{HalpernSiegel} found that the (semiclassical) JWKB approximation of certain quantum mechanical systems (e.g. systems of particles) leads to a strong-coupling expansion. In nonrelativistic quantum mechanics, the semiclassical limit of the Feynman path integral gives
 \begin{equation}
-	\hbar \rightarrow 0: \qquad \int\limits_{\mathbf{x}_{I}}^{\mathbf{x}_{O}} \mathrm{D}\mathbf{q}(t) \, \exp{\left( - \frac{i}{\hbar} S[\mathbf{q}] \right)} \approx \sqrt{\det{(\mathbf{V})}} \exp{\left( - \frac{i}{\hbar} \Sigma \right)} \label{FeynmanPath}
+	\hbar \rightarrow 0: \qquad \int\limits_{\mathbf{x}_{I}}^{\mathbf{x}_{O}} \mathrm{D}\mathbf{q}(t) \, \exp{\left( - \frac{i}{\hbar} S[\mathbf{q}] \right)} \approx \sqrt{\det{(\mathbf{V})}} \exp{\left( - \frac{i}{\hbar} \Sigma \right)};
+	\label{FeynmanPath}
 \end{equation}
 where
 \begin{equation}
-	\Sigma \equiv S[\mathbf{q}_{*}], \qquad \mathbf{V} \equiv - \frac{i}{\hbar} \frac{\partial^{2} \Sigma}{\partial \mathbf{x}_{I} \partial \mathbf{x}_{O}}
+	\Sigma \equiv S[\mathbf{q}_{*}], \qquad \mathbf{V} \equiv - \frac{i}{\hbar} \frac{\partial^{2} \Sigma}{\partial \mathbf{x}_{I} \partial \mathbf{x}_{O}}.
 \end{equation}
 Here $\mathbf{q}_{*}(t)$ is a solution of the classical equations of motion with boundary conditions $\mathbf{q}_{*}(t_{I}) = \mathbf{x}_{I}$ and $\mathbf{q}_{*}(t_{O}) = \mathbf{x}_{O}$. The right-hand side of (\ref{FeynmanPath}) is sometimes known as the Van Vleck-Morette approximation to the path integral \cite{VanVleck,CartierMorette}. We use the relativistic sister of this approximation to study four-point near-forward scattering (i.e. small-angle) in a system with two non-identical, heavy, scalar particles. When the particles are coupled via the exchange of massless spin $N$ quanta, in $D$ spacetime dimensions the scattering amplitude takes the form
 \begin{equation}
-	\mathcal{A} = \delta(P) \left[ \frac{\mathcal{K}_{N}(s)}{\rho_{N}(s)} \right] \int \mathrm{d}B_{12} \, \exp{\left[ - i B_{12} \cdot P_{12} + \beta_{N} \rho_{N}(s) \Gamma(\Delta - 1) \left( \frac{2}{B_{12}^{2}} \right)^{(\Delta - 1)} \right]} \label{AmpMassless}
+	\mathcal{A} = \delta(P) \left[ \frac{\mathcal{K}_{N}(s)}{\rho_{N}(s)} \right] \int \mathrm{d}B_{12} \, \exp{\left[ - i B_{12} \cdot P_{12} + \beta_{N} \rho_{N}(s) \Gamma(\Delta - 1) \left( \frac{2}{B_{12}^{2}} \right)^{(\Delta - 1)} \right]};
+	\label{AmpMassless}
 \end{equation}
 where $P_{12}^{2} = -t$, $\Delta = (D - 2)/2$, $\beta_{N}$ is a coupling, and the integral over $B_{12}$ is over a volume in $D - 2$ dimensions. This amplitude has the familiar ``eikonal'' form, which was derived long ago by adding perturbative contributions from all ladder diagrams \cite{ChengWuPRL,AbarbItzyk,LevySucher1,ChangMa}.
 

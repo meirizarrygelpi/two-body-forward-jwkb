@@ -1,160 +1,168 @@
 \section{Forward-JWKB Amplitudes in $D = 3$\label{sec4}}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 We now consider scattering in three spacetime dimensions. The coupling $g_{N}$ has units
 \begin{equation}
-	D = 3: \qquad [g_{N}] = \left( \frac{3 - 2N}{2} \right) [\text{mass}]
+	D = 3: \qquad [g_{N}] = \left( \frac{3 - 2N}{2} \right) [\text{mass}];
 \end{equation}
 and thus the coupling $\beta_{N}$ introduced in (\ref{betaN}) has units
 \begin{equation}
-	D = 3: \qquad [\beta_{N}] = 2[g_{N}] = \left(3 - 2N \right) [\text{mass}]
+	D = 3: \qquad [\beta_{N}] = 2[g_{N}] = \left(3 - 2N \right) [\text{mass}].
 \end{equation}
 For future reference we record the units of $\mathcal{K}_{N}$ and $\rho_{N}$ (in any number of dimensions):
 \begin{equation}
-	[\mathcal{K}_{N}] = 2N [\text{mass}], \qquad [\rho_{N}] = 2(N - 1) [\text{mass}]
+	[\mathcal{K}_{N}] = 2N [\text{mass}], \qquad [\rho_{N}] = 2(N - 1) [\text{mass}].
 \end{equation}
 When $D = 3$ we have $\Delta = 1/2$, and thus (\ref{AHND}) takes the form
 \begin{equation}
-	\mathcal{A} = \beta_{N} \mathcal{K}_{N} \delta(P) \left( \frac{\sqrt{2 \pi}}{\sqrt{2 \pi} \beta_{N} \rho_{N}} \right) \int \mathrm{d}B_{1 2} \, \exp{\left[-i B_{12} \cdot P_{12} - \sqrt{2\pi} \beta_{N} \rho_{N} \vert B_{1 2} \vert \right]}
+	\mathcal{A} = \beta_{N} \mathcal{K}_{N} \delta(P) \left( \frac{\sqrt{2 \pi}}{\sqrt{2 \pi} \beta_{N} \rho_{N}} \right) \int \mathrm{d}B_{1 2} \, \exp{\left[-i B_{12} \cdot P_{12} - \sqrt{2\pi} \beta_{N} \rho_{N} \vert B_{1 2} \vert \right]}.
 \end{equation}
 We recognize this as the Fourier transform of a massive, scalar propagator in one spacetime dimension along a spacelike coordinate with ``mass'' given by $\sqrt{2\pi} \beta_{N} \rho_{N}$. The Fourier transform is just the familiar massive Feynman propagator:
 \begin{equation}
-	\mathcal{A}(s, t) = \delta(P) \left[ \frac{2 \beta_{N} \mathcal{K}_{N}(s)}{2 \pi \beta_{N}^{2} \rho_{N}^{2}(s) - t} \right] = \delta(P) \left[- \frac{2 \beta_{N} \mathcal{K}_{N}(s)}{t} \right] \left[ 1 - \frac{2 \pi \beta_{N}^{2} \rho_{N}^{2}(s)}{t} \right]^{-1} \label{AHN3}
+	\mathcal{A}(s, t) = \delta(P) \left[ \frac{2 \beta_{N} \mathcal{K}_{N}(s)}{2 \pi \beta_{N}^{2} \rho_{N}^{2}(s) - t} \right] = \delta(P) \left[- \frac{2 \beta_{N} \mathcal{K}_{N}(s)}{t} \right] \left[ 1 - \frac{2 \pi \beta_{N}^{2} \rho_{N}^{2}(s)}{t} \right]^{-1}.
+	\label{AHN3}
 \end{equation}
 In the second step we have extracted the expected tree-level massless singularity. Besides this singularity, the amplitude has a simple pole at $t = 2 \pi \beta_{N}^{2} \rho_{N}^{2}$. We now specialize to particular values of $N$ in order to study this singularity further.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Exchange of Massless Scalar}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 With $N = 0$, the matter particles exchange a massless scalar. The coupling $\beta_{0}$ has units
 \begin{equation}
-	[\beta_{0}] = 3 [\text{mass}]
+	[\beta_{0}] = 3 [\text{mass}].
 \end{equation}
 For the tensor in the kinetic operator, we have $\kappa_{0} = 1$, which leads to $\nu_{0} = 1$, and thus $\mathcal{K}_{0} = 1$. Hence,
 \begin{equation}
-	\rho_{0} = \frac{1}{\sqrt{p_{31}^{2} p_{42}^{2} - (p_{31} \cdot p_{42})^{2}}}
+	\rho_{0} = \frac{1}{\sqrt{p_{31}^{2} p_{42}^{2} - (p_{31} \cdot p_{42})^{2}}}.
 \end{equation}
 Using the on-shell identities
 \begin{equation}
-	p_{31}^{2} = -M_{A}^{2}, \qquad p_{42}^{2} = -M_{B}^{2}, \qquad p_{31} \cdot p_{42} = \frac{M_{A}^{2} + M_{B}^{2} - s}{2}
+	p_{31}^{2} = -M_{1}^{2}, \qquad p_{42}^{2} = -M_{2}^{2}, \qquad p_{31} \cdot p_{42} = \frac{M_{1}^{2} + M_{2}^{2} - s}{2};
 \end{equation}
 leads to
 \begin{equation}
-	\rho_{0}(s) = \frac{2}{\sqrt{-\Lambda_{AB}(s)}}, \qquad \Lambda_{AB}(s) \equiv [s - (M_{A} - M_{B})^{2}] [s - (M_{A} + M_{B})^{2}]
+	\rho_{0}(s) = \frac{2}{\sqrt{-\Lambda_{M}(s)}}, \qquad \Lambda_{M}(s) \equiv [s - (M_{1} - M_{2})^{2}] [s - (M_{1} + M_{2})^{2}].
 \end{equation}
 The singularity $t_{*} = 2 \pi \beta_{0}^{2} \rho_{0}^{2}(s_{*})$ leads to
 \begin{equation}
-	s_{*} = M_{A}^{2} + M_{B}^{2} + 2 M_{A} M_{B} \left(1 - \frac{2 \pi \beta_{0}^{2}}{M_{A}^{2} M_{B}^{2} t_{*}} \right)^{1/2} \label{3s0}
+	s_{*} = M_{1}^{2} + M_{2}^{2} + 2 M_{1} M_{2} \left(1 - \frac{2 \pi \beta_{0}^{2}}{M_{1}^{2} M_{2}^{2} t_{*}} \right)^{1/2}.
+	\label{3s0}
 \end{equation}
-Using $u_{*} = 2m_{1}^{2} + 2m_{2}^{2} - t_{*} - s_{*}= 2M_{A}^{2} + 2M_{B}^{2} - s_{*}$ leads to
+Using $u_{*} = 2m_{1}^{2} + 2m_{2}^{2} - t_{*} - s_{*}= 2M_{1}^{2} + 2M_{2}^{2} - s_{*}$ leads to
 \begin{equation}
-	u_{*} = M_{A}^{2} + M_{B}^{2} - 2 M_{A} M_{B} \left(1 - \frac{2 \pi \beta_{0}^{2}}{M_{A}^{2} M_{B}^{2} t_{*}} \right)^{1/2}
+	u_{*} = M_{1}^{2} + M_{2}^{2} - 2 M_{1} M_{2} \left(1 - \frac{2 \pi \beta_{0}^{2}}{M_{1}^{2} M_{2}^{2} t_{*}} \right)^{1/2}.
 \end{equation}
 The product $s_{*} u_{*}$ gives
 \begin{equation}
-	s_{*} u_{*} = (M_{A} - M_{B})^{2}(M_{A} + M_{B})^{2} + \frac{8 \pi \beta_{0}^{2}}{t_{*}}
-	= (m_{1} - m_{2})^{2}(m_{1} + m_{2})^{2} + \frac{8 \pi \beta_{0}^{2}}{t_{*}} \label{3su0}
+	s_{*} u_{*} = (M_{1} - M_{2})^{2}(M_{1} + M_{2})^{2} + \frac{8 \pi \beta_{0}^{2}}{t_{*}}
+	= (m_{1} - m_{2})^{2}(m_{1} + m_{2})^{2} + \frac{8 \pi \beta_{0}^{2}}{t_{*}}.
+	\label{3su0}
 \end{equation}
 Thus, if $t_{*} \leq 0$ then $s_{*}$ and $u_{*}$ are inside of the physical scattering region. However, continuation to $t_{*} > 0$ allows a window with real values of $s_{*}$ and $u_{*}$ as long as
 \begin{equation}
-	t_{*} > \frac{2 \pi \beta_{0}^{2}}{M_{A}^{2} M_{B}^{2}}
+	t_{*} > \frac{2 \pi \beta_{0}^{2}}{M_{1}^{2} M_{2}^{2}}.
 \end{equation}
 This lies outside of the physical scattering region and suggests a bound state.
 
-In the forward-JWKB approximation (\ref{fJWKBLimit}), we have $M_{A} \approx m_{1}$ and $M_{B} \approx m_{2}$. When $t_{*} \leq 0$, we expect
+In the forward-JWKB approximation (\ref{fJWKBLimit}), we have $M_{1} \approx m_{1}$ and $M_{2} \approx m_{2}$. When $t_{*} \leq 0$, we expect
 \begin{equation}
 	\frac{s_{*}}{m_{1} m_{2}} \text{ fixed}, \qquad \frac{u_{*}}{m_{1} m_{2}} \text{ fixed.}
 \end{equation}
 In order for this to hold, in $D = 3$ we must supplement (\ref{fJWKBLimit}) with
 \begin{equation}
-	\frac{\beta_{0}^{2}}{m_{1}^{2} m_{2}^{2} t_{*}} \text{ fixed} \quad \Longrightarrow \quad \frac{\beta_{0}^{2}}{m_{1}^{3} m_{2}^{3}} \rightarrow 0^{+}
+	\frac{\beta_{0}^{2}}{m_{1}^{2} m_{2}^{2} t_{*}} \text{ fixed} \quad \Longrightarrow \quad \frac{\beta_{0}^{2}}{m_{1}^{3} m_{2}^{3}} \rightarrow 0^{+};
 \end{equation}
 which suggest \textit{weak-coupling} in the $D = 3$ version of the forward-JWKB approximation.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Exchange of Massless Vector}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 With $N = 1$, the particles exchange a massless vector. The coupling $\beta_{1}$ now has units
 \begin{equation}
-	[\beta_{1}] = [\text{mass}]
+	[\beta_{1}] = [\text{mass}].
 \end{equation}
 The tensor in the gauge-fixed kinetic operator is $(\kappa_{1})^{ab} = \eta^{ab}$, which leads to $(\nu_{1})_{ab} = \eta_{ab}$ and thus
 \begin{equation}
-	\mathcal{K}_{1} = p_{31} \cdot p_{42} = \frac{M_{A}^{2} + M_{B}^{2} - s}{2}
+	\mathcal{K}_{1} = p_{31} \cdot p_{42} = \frac{M_{1}^{2} + M_{2}^{2} - s}{2}.
 \end{equation}
 Hence,
 \begin{equation}
-	\rho_{1}(s) = Z_{A} Z_{B} \left[ \frac{M_{A}^{2} + M_{B}^{2} - s}{\sqrt{-\Lambda_{AB}(s)}} \right], \qquad \Lambda_{AB}(s) \equiv [s - (M_{A} - M_{B})^{2}] [s - (M_{A} + M_{B})^{2}]
+	\rho_{1}(s) = Z_{1} Z_{2} \left[ \frac{M_{1}^{2} + M_{2}^{2} - s}{\sqrt{-\Lambda_{M}(s)}} \right];
 \end{equation}
-where we have included dimensionless charges $Z_{A}$ and $Z_{B}$ for each particle. The singularity $t_{*} = 2 \pi \beta_{1}^{2} \rho_{1}^{2}(s_{*})$ now leads to
+where we have included dimensionless charges $Z_{1}$ and $Z_{2}$ for each particle. The singularity $t_{*} = 2 \pi \beta_{1}^{2} \rho_{1}^{2}(s_{*})$ now leads to
 \begin{equation}
-	s_{*} = M_{A}^{2} + M_{B}^{2} + 2 M_{A} M_{B} \left(1 + \frac{2 \pi Z_{A}^{2} Z_{B}^{2} \beta_{1}^{2}}{t_{*}} \right)^{-1/2}
+	s_{*} = M_{1}^{2} + M_{2}^{2} + 2 M_{1} M_{2} \left(1 + \frac{2 \pi Z_{1}^{2} Z_{2}^{2} \beta_{1}^{2}}{t_{*}} \right)^{-1/2};
 \end{equation}
 and thus
 \begin{equation}
-	u_{*} = M_{A}^{2} + M_{B}^{2} - 2 M_{A} M_{B} \left(1 + \frac{2 \pi Z_{A}^{2} Z_{B}^{2} \beta_{1}^{2}}{t_{*}} \right)^{-1/2}
+	u_{*} = M_{1}^{2} + M_{2}^{2} - 2 M_{1} M_{2} \left(1 + \frac{2 \pi Z_{1}^{2} Z_{2}^{2} \beta_{1}^{2}}{t_{*}} \right)^{-1/2}.
 \end{equation}
 The product $s_{*} u_{*}$ now gives
 \begin{align}
-	s_{*}& u_{*} = (M_{A} - M_{B})^{2}(M_{A} + M_{B})^{2} + 4 M_{A}^{2} M_{B}^{2} \left( \frac{2 \pi Z_{A}^{2} Z_{B}^{2} \beta_{1}^{2}}{2 \pi Z_{A}^{2} Z_{B}^{2} \beta_{1}^{2} + t_{*}} \right) \nonumber \\
-	&= (m_{1} - m_{2})^{2}(m_{1} + m_{2})^{2} + 4 m_{1}^{2} m_{2}^{2} \left(1 - \frac{t_{*}}{4 m_{1}^{2}} \right) \left(1 - \frac{t_{*}}{4 m_{2}^{2}} \right) \left( \frac{2 \pi Z_{A}^{2} Z_{B}^{2} \beta_{1}^{2}}{2 \pi Z_{A}^{2} Z_{B}^{2} \beta_{1}^{2} + t_{*}} \right)
+	s_{*}& u_{*} = (M_{1} - M_{2})^{2}(M_{1} + M_{2})^{2} + 4 M_{1}^{2} M_{2}^{2} \left( \frac{2 \pi Z_{1}^{2} Z_{2}^{2} \beta_{1}^{2}}{2 \pi Z_{1}^{2} Z_{2}^{2} \beta_{1}^{2} + t_{*}} \right) \nonumber \\
+	&= (m_{1} - m_{2})^{2}(m_{1} + m_{2})^{2} + 4 m_{1}^{2} m_{2}^{2} \left(1 - \frac{t_{*}}{4 m_{1}^{2}} \right) \left(1 - \frac{t_{*}}{4 m_{2}^{2}} \right) \left( \frac{2 \pi Z_{1}^{2} Z_{2}^{2} \beta_{1}^{2}}{2 \pi Z_{1}^{2} Z_{2}^{2} \beta_{1}^{2} + t_{*}} \right).
 \end{align}
 Again, inside of the physical scattering region we have $t_{*} \leq 0$ and hence $s_{*}$ and $u_{*}$ are also inside of the physical scattering region. However, in order for $s_{*}$ and $u_{*}$ to be real and finite, we must require
 \begin{equation}
-	{-t_{*}} > 2 \pi Z_{A}^{2} Z_{B}^{2} \beta_{1}^{2}
+	{-t_{*}} > 2 \pi Z_{1}^{2} Z_{2}^{2} \beta_{1}^{2}.
 \end{equation}
 If we analytically continue to $t_{*} > 0$, we find $s_{*}$ and $u_{*}$ real for any value of $t_{*}$.
 
 With the massless vector exchange, in $D = 3$ we must supplement (\ref{fJWKBLimit}) with
 \begin{equation}
-	\frac{\beta_{1}^{2}}{t_{*}} \text{ fixed} \quad \Longrightarrow \quad \frac{\beta_{1}^{2}}{m_{1} m_{2}} \rightarrow 0^{+}
+	\frac{\beta_{1}^{2}}{t_{*}} \text{ fixed} \quad \Longrightarrow \quad \frac{\beta_{1}^{2}}{m_{1} m_{2}} \rightarrow 0^{+};
 \end{equation}
 which also suggest \textit{weak-coupling}.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Exchange of Massless Symmetric Tensor}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 A massless symmetric (traceless) tensor has no propagating degrees of freedom in $D = 3$. Setting $N = 2$ corresponds to a sort of analytic continuation. Whatever the result gives, it should not have an interpretation in terms of propagating gravitons. The coupling $\beta_{2}$ has units
 \begin{equation}
-	[\beta_{2}] = - [\text{mass}]
+	[\beta_{2}] = - [\text{mass}].
 \end{equation}
 When $N = 2$, the tensor in the gauge-fixed kinetic operator is
 \begin{equation}
-	(\kappa_{2})^{a_{1}b_{1} a_{2} b_{2}} = \frac{1}{2} \left( \eta^{a_{1} a_{2}} \eta^{b_{1} b_{2}} + \eta^{a_{1}b_{2}} \eta^{b_{1}a_{2}} - \eta^{a_{1}b_{1}} \eta^{a_{2}b_{2}} \right)
+	(\kappa_{2})^{a_{1}b_{1} a_{2} b_{2}} = \frac{1}{2} \left( \eta^{a_{1} a_{2}} \eta^{b_{1} b_{2}} + \eta^{a_{1}b_{2}} \eta^{b_{1}a_{2}} - \eta^{a_{1}b_{1}} \eta^{a_{2}b_{2}} \right).
 \end{equation}
 In $D = 3$, we find
 \begin{equation}
-	D = 3: \qquad (\nu_{2})_{a_{1}b_{1} a_{2} b_{2}} = \frac{1}{2} \left( \eta_{a_{1} a_{2}} \eta_{b_{1} b_{2}} + \eta_{a_{1}b_{2}} \eta_{b_{1}a_{2}} - 2\eta_{a_{1}b_{1}} \eta_{a_{2}b_{2}} \right)
+	D = 3: \qquad (\nu_{2})_{a_{1}b_{1} a_{2} b_{2}} = \frac{1}{2} \left( \eta_{a_{1} a_{2}} \eta_{b_{1} b_{2}} + \eta_{a_{1}b_{2}} \eta_{b_{1}a_{2}} - 2\eta_{a_{1}b_{1}} \eta_{a_{2}b_{2}} \right).
 \end{equation}
 Thus, in $D = 3$ we have
 \begin{equation}
-	D = 3: \qquad \mathcal{K}_{2} = (p_{31} \cdot p_{42})^{2} - p_{31}^{2} p_{42}^{2} = \frac{1}{4} \Lambda_{AB}(s) \label{D3K2}
+	D = 3: \qquad \mathcal{K}_{2} = (p_{31} \cdot p_{42})^{2} - p_{31}^{2} p_{42}^{2} = \frac{1}{4} \Lambda_{M}(s);
+	\label{D3K2}
 \end{equation}
 and hence
 \begin{equation}
-	D = 3: \qquad \rho_{2}(s) = -\frac{1}{2} \sqrt{-\Lambda_{AB}(s)} \label{D3rho2}
+	D = 3: \qquad \rho_{2}(s) = -\frac{1}{2} \sqrt{-\Lambda_{M}(s)}.
+	\label{D3rho2}
 \end{equation}
 The singularity $t_{*} = 2 \pi \beta_{2}^{2} \rho_{2}^{2}(s_{*})$ leads to
 \begin{equation}
-	s_{*} = M_{A}^{2} + M_{B}^{2} + 2 M_{A} M_{B} \left( 1 - \frac{t_{*}}{2\pi M_{A}^{2} M_{B}^{2} \beta_{2}^{2}} \right)^{1/2} \label{3s2}
+	s_{*} = M_{1}^{2} + M_{2}^{2} + 2 M_{1} M_{2} \left( 1 - \frac{t_{*}}{2\pi M_{1}^{2} M_{2}^{2} \beta_{2}^{2}} \right)^{1/2};
+	\label{3s2}
 \end{equation}
 and thus
 \begin{equation}
-	u_{*} = M_{A}^{2} + M_{B}^{2} - 2 M_{A} M_{B} \left( 1 - \frac{t_{*}}{2\pi M_{A}^{2} M_{B}^{2} \beta_{2}^{2}} \right)^{1/2} \label{3u2}
+	u_{*} = M_{1}^{2} + M_{2}^{2} - 2 M_{1} M_{2} \left( 1 - \frac{t_{*}}{2\pi M_{1}^{2} M_{2}^{2} \beta_{2}^{2}} \right)^{1/2}.
+	\label{3u2}
 \end{equation}
 We look at the product $s_{*} u_{*}$:
 \begin{equation}
-	s_{*} u_{*} = (M_{A} - M_{B})^{2}(M_{A} + M_{B})^{2} + \frac{2 t_{*}}{\pi \beta_{2}^{2}}
-	= (m_{1} - m_{2})^{2}(m_{1} + m_{2})^{2} + \frac{2 t_{*}}{\pi \beta_{2}^{2}} \label{3su2}
+	s_{*} u_{*} = (M_{1} - M_{2})^{2}(M_{1} + M_{2})^{2} + \frac{2 t_{*}}{\pi \beta_{2}^{2}}
+	= (m_{1} - m_{2})^{2}(m_{1} + m_{2})^{2} + \frac{2 t_{*}}{\pi \beta_{2}^{2}}.
+	\label{3su2}
 \end{equation}
 Note the similarity between (\ref{3su0}) and (\ref{3su2}). Indeed, under the replacement
 \begin{equation}
-	\frac{2\pi \beta_{0}^{2}}{t_{*}} \longleftrightarrow \frac{t_{*}}{2\pi \beta_{2}^{2}}
+	\frac{2\pi \beta_{0}^{2}}{t_{*}} \longleftrightarrow \frac{t_{*}}{2\pi \beta_{2}^{2}};
 \end{equation}
 we find complete agreement. It follows that if $t_{*} \leq 0$, then $s_{*}$ and $u_{*}$ are inside of the physical scattering region. If we let $t_{*} > 0$, then we must have
 \begin{equation}
-	t_{*} \leq 2 \pi M_{A}^{2} M_{B}^{2} \beta_{2}^{2}
+	t_{*} \leq 2 \pi M_{1}^{2} M_{2}^{2} \beta_{2}^{2};
 \end{equation}
 in order for $s_{*}$ and $u_{*}$ to be real.
 
 Looking at (\ref{3s2}) and enforcing the forward-JWKB approximation (\ref{fJWKBLimit}), it is easy to conclude that $s_{*} \approx (m_{1} + m_{2})^{2}$. This assumes that $m_{1} m_{2} \beta_{2}^{2}$ is kept fixed in the forward-JWKB approximation. A more correct statement is that $s_{*} / (m_{1} m_{2})$ is kept fixed, which leads to
 \begin{equation}
-	\frac{t_{*}}{m_{1}^{2} m_{2}^{2} \beta_{2}^{2}} \text{ fixed} \quad \Longrightarrow \quad m_{1} m_{2} \beta_{2}^{2} \rightarrow 0^{+}
+	\frac{t_{*}}{m_{1}^{2} m_{2}^{2} \beta_{2}^{2}} \text{ fixed} \quad \Longrightarrow \quad m_{1} m_{2} \beta_{2}^{2} \rightarrow 0^{+};
 \end{equation}
-which, yet again, suggests \textit{weak-coupling}. However, since the coupling $\beta_{2}$ appears in denominators in (\ref{3s2}) and (\ref{3su2}), it seems that this weak-coupling phenomenon does not arises from perturbative contributions involving the exchange of propagating quanta.
+which, yet again, suggests \textit{weak-coupling}. However, since the coupling $\beta_{2}$ appears in denominators in (\ref{3s2}) and (\ref{3su2}), it seems that this weak-coupling phenomenon does not arise from perturbative contributions involving the exchange of propagating quanta.

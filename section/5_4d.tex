@@ -1,148 +1,154 @@
 \section{Forward-JWKB Amplitudes in $D = 4$\label{sec5}}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 In $D = 3$ we found that the forward-JWKB scattering amplitude has one extra singularity. As we will see shortly, in $D = 4$ we have an infinite number of singularities. For $N = 0$ and $N = 1$ the structure of these singularities in $D = 4$ is related to the singularity in $D = 3$. When $N = 2$ we find an infinite number of singularities that have a very different interpretation from the singularity in $D = 3$.
 
 But as soon as we set $D = 4$ (i.e. $\Delta = 1$), we find trouble inside of the exponential in (\ref{AHND}). To get around this issue, we work instead in $D = 4 + 2 \epsilon$ with $\epsilon > 0$. The coupling parameter $g_{N}$ and $\beta_{N}$ have units
 \begin{equation}
-	D = 4 + 2 \epsilon: \qquad [g_{N}] = \left( 1 - \epsilon - N \right) [\text{mass}], \qquad [\beta_{N}] = 2 \left( 1 - \epsilon - N \right) [\text{mass}]
+	D = 4 + 2 \epsilon: \qquad [g_{N}] = \left( 1 - \epsilon - N \right) [\text{mass}], \qquad [\beta_{N}] = 2 \left( 1 - \epsilon - N \right) [\text{mass}].
 \end{equation}
 It is convenient to extract from $\beta_{N}$ the four-dimensional coupling $\alpha_{N}$ by introducing a constant $\mu$ with units of mass:
 \begin{equation}
-	\beta_{N} = \alpha_{N} \left( \frac{1}{\mu^{2}} \right)^{\epsilon}
+	\beta_{N} = \alpha_{N} \left( \frac{1}{\mu^{2}} \right)^{\epsilon}.
 \end{equation}
 Inside the exponential in (\ref{AHND}), we have
 \begin{align}
 	\beta_{N} \Gamma(\Delta - 1) \left( \frac{2}{B_{12}^{2}} \right)^{(\Delta - 1)} &= \alpha_{N} \Gamma(\epsilon) \left( \frac{2}{\mu^{2} B_{12}^{2}} \right)^{\epsilon} \nonumber \\
-	&\approx \alpha_{N} \Gamma(\epsilon) + \alpha_{N} \log{\left( \frac{2}{\mu^{2} B_{12}^{2}} \right)} + O(\epsilon)
+	&\approx \alpha_{N} \Gamma(\epsilon) + \alpha_{N} \log{\left( \frac{2}{\mu^{2} B_{12}^{2}} \right)} + O(\epsilon);
 \end{align}
 where in the second line we have expanded near $\epsilon = 0$ and kept the leading logarithm. The amplitude near four-dimensions becomes
 \begin{equation}
-	\mathcal{A}(s, t) \approx \delta(P) \left[ \frac{\mathcal{K}_{N}}{\rho_{N}} \right] \exp{\left[ \alpha_{N} \rho_{N} \Gamma(\epsilon) \right]} \int \mathrm{d}B_{12} \left( \frac{2}{\mu^{2} B_{12}^{2}} \right)^{\alpha_{N} \rho_{N}} \exp{\left( - i B_{12} \cdot P_{12} \right)}
+	\mathcal{A}(s, t) \approx \delta(P) \left[ \frac{\mathcal{K}_{N}}{\rho_{N}} \right] \exp{\left[ \alpha_{N} \rho_{N} \Gamma(\epsilon) \right]} \int \mathrm{d}B_{12} \left( \frac{2}{\mu^{2} B_{12}^{2}} \right)^{\alpha_{N} \rho_{N}} \exp{\left( - i B_{12} \cdot P_{12} \right)}.
 \end{equation}
 Note that the divergent part has factored out and appears inside an exponential. The integral over $B_{12}$ is now over a $D - 2 \approx 2$ dimensional volume. Integration yields
 \begin{equation}
-	\mathcal{A}(s, t) \approx \delta(P) \left[ \frac{\alpha_{N} \mathcal{K}_{N}(s)}{\mu^{2}} \right] \exp{\left[ \alpha_{N} \rho_{N}(s) \Gamma(\epsilon) \right]} \frac{\Gamma[1 - \alpha_{N} \rho_{N}(s)]}{\Gamma[1 + \alpha_{N} \rho_{N}(s)]} \left( - \frac{t}{2 \mu^{2}} \right)^{(\alpha_{N} \rho_{N}(s) - 1)} \label{AHN4notree}
+	\mathcal{A}(s, t) \approx \delta(P) \left[ \frac{\alpha_{N} \mathcal{K}_{N}(s)}{\mu^{2}} \right] \exp{\left[ \alpha_{N} \rho_{N}(s) \Gamma(\epsilon) \right]} \frac{\Gamma[1 - \alpha_{N} \rho_{N}(s)]}{\Gamma[1 + \alpha_{N} \rho_{N}(s)]} \left( - \frac{t}{2 \mu^{2}} \right)^{(\alpha_{N} \rho_{N}(s) - 1)}.
+	\label{AHN4notree}
 \end{equation}
 A convenient way to write this result is
 \begin{equation}
-	\mathcal{A}(s, t) \approx \mathcal{A}_{\text{tree}}(s, t) \exp{\left[ \alpha_{N} \rho_{N}(s) \Gamma(\epsilon) \right]} \frac{\Gamma[1 - \alpha_{N} \rho_{N}(s)]}{\Gamma[1 + \alpha_{N} \rho_{N}(s)]} \left( - \frac{t}{2 \mu^{2}} \right)^{\alpha_{N} \rho_{N}(s)} \label{AHN4}
+	\mathcal{A}(s, t) \approx \mathcal{A}_{\text{tree}}(s, t) \exp{\left[ \alpha_{N} \rho_{N}(s) \Gamma(\epsilon) \right]} \frac{\Gamma[1 - \alpha_{N} \rho_{N}(s)]}{\Gamma[1 + \alpha_{N} \rho_{N}(s)]} \left( - \frac{t}{2 \mu^{2}} \right)^{\alpha_{N} \rho_{N}(s)};
+	\label{AHN4}
 \end{equation}
 where we have collected the tree-level contribution into a prefactor,
 \begin{equation}
-	\mathcal{A}_{\text{tree}}(s, t) = \delta(P) \left[ - \frac{2 \alpha_{N} \mathcal{K}_{N}(s)}{t} \right]
+	\mathcal{A}_{\text{tree}}(s, t) = \delta(P) \left[ - \frac{2 \alpha_{N} \mathcal{K}_{N}(s)}{t} \right];
 \end{equation}
 which exhibits the familiar massless pole at $t = 0$. Indeed, the result (\ref{AHN4}) exhibits an infinite number of singularities from the poles of the Euler Gamma function in the numerator. In order to make all of the singularities manifest, it is useful to decompose the amplitude (\ref{AHN4notree}) into partial waves:
 \begin{equation}
-	\mathcal{A}(s, t) = \sum_{l = 0}^{\infty} (2l + 1) \mathcal{A}_{l}(s) P_{l}(z_{s}), \qquad z_{s} = \cos{(\theta_{s})}
+	\mathcal{A}(s, t) = \sum_{l = 0}^{\infty} (2l + 1) \mathcal{A}_{l}(s) P_{l}(z_{s}), \qquad z_{s} = \cos{(\theta_{s})};
 \end{equation}
 where $P_{l}$ is a Legendre polynomial, and the partial amplitude $\mathcal{A}_{l}$ is given by
 \begin{equation}
-	\mathcal{A}_{l}(s) = \frac{1}{2} \int\limits_{-1}^{1} \mathrm{d}z_{s} \, \mathcal{A}(s, t) P_{l}(z_{s})
+	\mathcal{A}_{l}(s) = \frac{1}{2} \int\limits_{-1}^{1} \mathrm{d}z_{s} \, \mathcal{A}(s, t) P_{l}(z_{s}).
 \end{equation}
 Using
 \begin{equation}
-	{-t} = \frac{\Lambda_{12}(s)}{s} \left( \frac{1 - z_{s}}{2} \right)
+	{-t} = \frac{\Lambda_{12}(s)}{s} \left( \frac{1 - z_{s}}{2} \right);
 \end{equation}
 and
 \begin{equation}
-	P_{l}(z_{s}) = \sum_{k = 0}^{l} \frac{\Gamma(1 + l)}{\Gamma(1 + k) \Gamma(1 + l - k)} \frac{\Gamma(-l)}{\Gamma(1 + k) \Gamma(-l-k)} \left( \frac{1 - z_{s}}{2} \right)^{k}
+	P_{l}(z_{s}) = \sum_{k = 0}^{l} \frac{\Gamma(1 + l)}{\Gamma(1 + k) \Gamma(1 + l - k)} \frac{\Gamma(-l)}{\Gamma(1 + k) \Gamma(-l-k)} \left( \frac{1 - z_{s}}{2} \right)^{k};
 \end{equation}
 leads to the partial amplitude
 \begin{equation}
-	\mathcal{A}_{l}(s) = \delta(P) \frac{\sqrt{- \Lambda_{AB}(s)}}{2 \mu^{2}} \exp{\left[ \alpha_{N} \rho_{N}(s) \Gamma(\epsilon) \right]} \left[ \frac{\Lambda_{12}(s)}{2 \mu^{2} s} \right]^{(\alpha_{N} \rho_{N} - 1)} \frac{\Gamma[1 - \alpha_{N} \rho_{N}(s) + l]}{\Gamma[1 + \alpha_{N} \rho_{N}(s) + l]}
+	\mathcal{A}_{l}(s) = \delta(P) \frac{\sqrt{- \Lambda_{M}(s)}}{2 \mu^{2}} \exp{\left[ \alpha_{N} \rho_{N}(s) \Gamma(\epsilon) \right]} \left[ \frac{\Lambda_{12}(s)}{2 \mu^{2} s} \right]^{(\alpha_{N} \rho_{N} - 1)} \frac{\Gamma[1 - \alpha_{N} \rho_{N}(s) + l]}{\Gamma[1 + \alpha_{N} \rho_{N}(s) + l]}.
 \end{equation}
 This partial amplitude has a singularity whenever
 \begin{equation}
 	1 - \alpha_{N} \rho_{N}(s_{nl}) + l = - n, \qquad n = 0, 1, 2, \ldots \qquad l = 0, 1, 2, \ldots
 \end{equation}
 At first glance, we see a close similarity between this singularity condition in $D = 4$ and the condition $t = 2 \pi \beta_{N}^{2} \rho_{N}^{2}(s_{*})$ in $D = 3$. We now consider specific values of $N$.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Exchange of Massless Scalar}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 A massless scalar field has the same dynamics in $D = 3$ and $D = 4$. Thus, we again have
 \begin{equation}
-	\rho_{0}(s) = \frac{2}{\sqrt{-\Lambda_{AB}(s)}}, \qquad \Lambda_{AB}(s) \equiv [s - (M_{A} - M_{B})^{2}] [s - (M_{A} + M_{B})^{2}] \label{rho0D4}
+	\rho_{0}(s) = \frac{2}{\sqrt{-\Lambda_{M}(s)}}, \qquad \Lambda_{M}(s) \equiv [s - (M_{1} - M_{2})^{2}] [s - (M_{1} + M_{2})^{2}].
+	\label{rho0D4}
 \end{equation}
 In $D = 4$, the coupling $\alpha_{0}$ has units
 \begin{equation}
-	[\alpha_{0}] = 2 [\text{mass}]
+	[\alpha_{0}] = 2 [\text{mass}].
 \end{equation}
 The singularity condition becomes $1 - \alpha_{0} \rho_{0}(s_{nl}) + l = -n$. Comparing this to $t_{*} = 2 \pi \beta_{0}^{2} \rho_{0}^{2}(s_{*})$ in $D = 3$, we can find the solution for $s_{nl}$ by using (\ref{3s0}) with the replacement
 \begin{equation}
-	\frac{2 \pi \beta_{0}^{2}}{t_{*}} \longrightarrow \frac{\alpha_{0}^{2}}{(n + l + 1)^{2}}
+	\frac{2 \pi \beta_{0}^{2}}{t_{*}} \longrightarrow \frac{\alpha_{0}^{2}}{(n + l + 1)^{2}}.
 \end{equation}
 Note that this replacement is only valid when $t_{*} > 0$ (i.e. outside of the physical scattering region), since the right-hand side is always positive. Thus, in $D = 4$ we have the infinite sequence
 \begin{equation}
-	s_{nl} = M_{A}^{2} + M_{B}^{2} + 2 M_{A} M_{B} \left(1 - \frac{\alpha_{0}^{2}}{M_{A}^{2} M_{B}^{2} (n + l + 1)^{2}} \right)^{1/2} \label{sJ0}
+	s_{nl} = M_{1}^{2} + M_{2}^{2} + 2 M_{1} M_{2} \left(1 - \frac{\alpha_{0}^{2}}{M_{1}^{2} M_{2}^{2} (n + l + 1)^{2}} \right)^{1/2}.
+	\label{sJ0}
 \end{equation}
-Using $s_{nl} + u_{nl} = 2M_{A}^{2} + 2M_{B}^{2}$ leads to
+Using $s_{nl} + u_{nl} = 2M_{1}^{2} + 2M_{2}^{2}$ leads to
 \begin{equation}
-	u_{nl} = M_{A}^{2} + M_{B}^{2} - 2 M_{A} M_{B} \left(1 - \frac{\alpha_{0}^{2}}{M_{A}^{2} M_{B}^{2} (n + l + 1)^{2}} \right)^{1/2}
+	u_{nl} = M_{1}^{2} + M_{2}^{2} - 2 M_{1} M_{2} \left(1 - \frac{\alpha_{0}^{2}}{M_{1}^{2} M_{2}^{2} (n + l + 1)^{2}} \right)^{1/2}.
 \end{equation}
 Unlike in $D = 3$, the infinite sequences $(s_{nl}, u_{nl})$ always lie outside of the physical scattering region. This suggest an interpretation as bound state singularities.
 
 The singularities $(s_{nl}, u_{nl})$ lie outside of the physical scattering region, but we can still look for the requirement that $s_{nl} / (m_{1} m_{2})$ is fixed in the forward-JWKB approximation (\ref{fJWKBLimit}):
 \begin{equation}
-	\frac{s_{nl}}{m_{1} m_{2}} \text{ fixed} \quad \Longrightarrow \quad \frac{\alpha_{0}^{2}}{M_{A}^{2} M_{B}^{2} (n + l + 1)^{2}} \text{ fixed}
+	\frac{s_{nl}}{m_{1} m_{2}} \text{ fixed} \quad \Longrightarrow \quad \frac{\alpha_{0}^{2}}{M_{1}^{2} M_{2}^{2} (n + l + 1)^{2}} \text{ fixed}.
 \end{equation}
 Since the semiclassical approximation involves large quantum numbers, we have
 \begin{equation}
-	n + l \rightarrow \infty \quad \Longrightarrow \quad \frac{\alpha_{0}}{M_{A} M_{B}} \rightarrow \infty
+	n + l \rightarrow \infty \quad \Longrightarrow \quad \frac{\alpha_{0}}{M_{1} M_{2}} \rightarrow \infty;
 \end{equation}
 which suggests \textit{strong-coupling} in the forward-JWKB regime in $D = 4$.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Exchange of Massless Vector}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 A massless vector field has two physical polarizations in $D = 4$, and one in $D = 3$. However, the gauge-fixed kinetic operators are the same in any number of dimensions. Again, we have
 \begin{equation}
-	\rho_{1}(s) = Z_{A} Z_{B} \left[ \frac{M_{A}^{2} + M_{B}^{2} - s}{\sqrt{-\Lambda_{AB}(s)}} \right]
+	\rho_{1}(s) = Z_{1} Z_{2} \left[ \frac{M_{1}^{2} + M_{2}^{2} - s}{\sqrt{-\Lambda_{M}(s)}} \right];
 \end{equation}
-where, again, we have introduced dimensionless charges $Z_{A}$ and $Z_{B}$. The singularity condition becomes $1 - \alpha_{1} \rho_{1}(s_{nl}) + l = -n$, which is again analogous to the singularity condition in $D = 3$ with the replacement
+where, again, we have introduced dimensionless charges $Z_{1}$ and $Z_{2}$. The singularity condition becomes $1 - \alpha_{1} \rho_{1}(s_{nl}) + l = -n$, which is again analogous to the singularity condition in $D = 3$ with the replacement
 \begin{equation}
-	\frac{2 \pi \beta_{1}^{2}}{t_{*}} \longrightarrow \frac{\alpha_{1}^{2}}{(n + l + 1)^{2}}
+	\frac{2 \pi \beta_{1}^{2}}{t_{*}} \longrightarrow \frac{\alpha_{1}^{2}}{(n + l + 1)^{2}}.
 \end{equation}
 Hence, in $D = 4$ we have
 \begin{equation}
-	s_{nl} = M_{A}^{2} + M_{B}^{2} + 2 M_{A} M_{B} \left(1 + \frac{Z_{A}^{2} Z_{B}^{2} \alpha_{1}^{2}}{(n + l + 1)^{2}} \right)^{-1/2} \label{sJ1}
+	s_{nl} = M_{1}^{2} + M_{2}^{2} + 2 M_{1} M_{2} \left(1 + \frac{Z_{1}^{2} Z_{2}^{2} \alpha_{1}^{2}}{(n + l + 1)^{2}} \right)^{-1/2}.
+	\label{sJ1}
 \end{equation}
 We find that $s_{nl}$ is always outside of the physical scattering region.
 
 Keeping $s_{nl}/(m_{1} m_{2})$ fixed in the forward-JWKB approximation requires
 \begin{equation}
-	\frac{\alpha_{1}^{2}}{(n + l + 1)^{2}} \text{ fixed}
+	\frac{\alpha_{1}^{2}}{(n + l + 1)^{2}} \text{ fixed}.
 \end{equation}
 If $n + l \rightarrow \infty$, we must also have $\alpha_{1} \rightarrow \infty$. Thus, in $D = 4$ we again find \textit{strong-coupling}.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Exchange of Massless Symmetric Tensor}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 A massless symmetric (traceless) tensor has two physical polarizations in $D = 4$. The kinetic operator (and thus the tensor $\kappa_{2}$) are the same as in $D = 3$. However, in $D = 4$, the $\nu_{2}$ tensor gives
 \begin{equation}
-	D = 4: \qquad (\nu_{2})_{a_{1}b_{1} a_{2} b_{2}} = \frac{1}{2} \left( \eta_{a_{1} a_{2}} \eta_{b_{1} b_{2}} + \eta_{a_{1}b_{2}} \eta_{b_{1}a_{2}} - \eta_{a_{1}b_{1}} \eta_{a_{2}b_{2}} \right)
+	D = 4: \qquad (\nu_{2})_{a_{1}b_{1} a_{2} b_{2}} = \frac{1}{2} \left( \eta_{a_{1} a_{2}} \eta_{b_{1} b_{2}} + \eta_{a_{1}b_{2}} \eta_{b_{1}a_{2}} - \eta_{a_{1}b_{1}} \eta_{a_{2}b_{2}} \right).
 \end{equation}
 This leads to a different $\mathcal{K}_{2}$ from (\ref{D3K2}),
 \begin{equation}
-	D = 4: \qquad \mathcal{K}_{2} = (p_{31} \cdot p_{42})^{2} - \frac{1}{2} p_{31}^{2} p_{42}^{2} = \frac{1}{4} \left[ (M_{A}^{2} + M_{B}^{2} - s)^{2} - 2 M_{A}^{2} M_{B}^{2} \right]
+	D = 4: \qquad \mathcal{K}_{2} = (p_{31} \cdot p_{42})^{2} - \frac{1}{2} p_{31}^{2} p_{42}^{2} = \frac{1}{4} \left[ (M_{1}^{2} + M_{2}^{2} - s)^{2} - 2 M_{1}^{2} M_{2}^{2} \right];
 \end{equation}
 and thus, a different $\rho_{2}(s)$ from (\ref{D3rho2}),
 \begin{equation}
-	D = 4: \qquad \rho_{2}(s) = \frac{1}{2} \left[ \frac{(M_{A}^{2} + M_{B}^{2} - s)^{2} - 2 M_{A}^{2} M_{B}^{2}}{\sqrt{-\Lambda_{AB}(s)}} \right]
+	D = 4: \qquad \rho_{2}(s) = \frac{1}{2} \left[ \frac{(M_{1}^{2} + M_{2}^{2} - s)^{2} - 2 M_{1}^{2} M_{2}^{2}}{\sqrt{-\Lambda_{M}(s)}} \right].
 \end{equation}
 In $D = 4$ the coupling $\alpha_{2}$ has units
 \begin{equation}
-	[\alpha_{2}] = -2 [\text{mass}]
+	[\alpha_{2}] = -2 [\text{mass}].
 \end{equation}
 Solving the singularity condition $1 - \alpha_{2} \rho_{2}(s_{nl}) + l = -n$ leads to
 \begin{equation}
-	s_{nl} = M_{A}^{2} + M_{B}^{2} + 2M_{A}M_{B} \left[ \frac{1}{2} + \left(1 + \sqrt{1 + \frac{2 M_{A}^{2} M_{B}^{2} \alpha_{2}^{2}}{(n + l + 1)^{2}}} \right)^{-1} \right]^{1/2} \label{sJ2}
+	s_{nl} = M_{1}^{2} + M_{2}^{2} + 2M_{1}M_{2} \left[ \frac{1}{2} + \left(1 + \sqrt{1 + \frac{2 M_{1}^{2} M_{2}^{2} \alpha_{2}^{2}}{(n + l + 1)^{2}}} \right)^{-1} \right]^{1/2}.
+	\label{sJ2}
 \end{equation}
 Again, we find that the infinite sequence of singularities $s_{nl}$ lie outside of the physical scattering region.
 
 Keeping $s_{nl}/(m_{1}m_{2})$ fixed in the forward-JWKB approximation requires
 \begin{equation}
-	\frac{M_{A}^{2} M_{B}^{2} \alpha_{2}^{2}}{(n + l + 1)^{2}} \text{ fixed}
+	\frac{M_{1}^{2} M_{2}^{2} \alpha_{2}^{2}}{(n + l + 1)^{2}} \text{ fixed}.
 \end{equation}
-If $n + l \rightarrow \infty$, then also $M_{A} M_{B} \alpha_{2} \rightarrow \infty$, which yet again suggest \textit{strong-coupling} in $D = 4$. Moreover, for spin 2 interactions the product $m_{i} \alpha_{2}$ corresponds to the Schwarzschild radius $r_{i}$ of a particle with mass $m_{i}$. The product $M_{A} M_{B} \alpha_{2} \approx m_{1} m_{2} \alpha_{2}$ can be interpreted as the ratio of the Schwarzschild radius of one particle to the Compton wavelength of the other:
+If $n + l \rightarrow \infty$, then also $M_{1} M_{2} \alpha_{2} \rightarrow \infty$, which yet again suggest \textit{strong-coupling} in $D = 4$. Moreover, for spin 2 interactions the product $m_{i} \alpha_{2}$ corresponds to the Schwarzschild radius $r_{i}$ of a particle with mass $m_{i}$. The product $M_{1} M_{2} \alpha_{2} \approx m_{1} m_{2} \alpha_{2}$ can be interpreted as the ratio of the Schwarzschild radius of one particle to the Compton wavelength of the other:
 \begin{equation}
-	m_{1} m_{2} \alpha_{2} = \frac{r_{1}}{\lambda_{2}} = \frac{r_{2}}{\lambda_{1}}
+	m_{1} m_{2} \alpha_{2} = \frac{r_{1}}{\lambda_{2}} = \frac{r_{2}}{\lambda_{1}}.
 \end{equation}
 Thus, $m_{1} m_{2} \alpha_{2} \rightarrow \infty$ is also the regime of large Schwarzschild radii.
