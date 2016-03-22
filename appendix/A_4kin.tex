@@ -45,43 +45,43 @@ In the center-of-momentum frame, we write the energy-momentum vectors as
 \end{equation}
 It is easy to show that, in terms of $s$ and the masses $(m_{1}, m_{2})$, the magnitude of the spatial vectors $(\mathbf{p}_{1}, \mathbf{p}_{3})$ are given by
 \begin{equation}
-	|\mathbf{p}_{1}| = |\mathbf{p}_{3}| = \frac{\sqrt{\Lambda_{12}}}{2 \sqrt{s}}, \qquad \Lambda_{12} \equiv \left[s - (m_{1} - m_{2})^{2} \right] \left[s - (m_{1} + m_{2})^{2} \right];
+	|\mathbf{p}_{1}| = |\mathbf{p}_{3}| = \frac{\sqrt{\Lambda_{12}}}{2 \sqrt{s}}, \qquad \Lambda_{12} \equiv \left[s - \left(m_{1} - m_{2} \right)^{2} \right] \left[s - \left(m_{1} + m_{2}\right)^{2} \right];
 	\label{2Momenta}
 \end{equation}
 and the energies of the external states are given by
 \begin{equation}
-	E_{1} = E_{3} = \frac{s + (m_{1} - m_{2})(m_{1} + m_{2})}{2 \sqrt{s}}, \qquad E_{2} = E_{4} = \frac{s - (m_{1} - m_{2})(m_{1} + m_{2})}{2 \sqrt{s}}.
+	E_{1} = E_{3} = \frac{s + m_{1}^{2} - m_{2}^{2}}{2 \sqrt{s}}, \qquad E_{2} = E_{4} = \frac{s - m_{1}^{2} + m_{2}^{2}}{2 \sqrt{s}}.
 	\label{4Energies}
 \end{equation}
 A relativistic particle with mass $m \geq 0$ and energy $E \geq m$ has a speed $|\mathbf{v}| \leq 1$ given by
 \begin{equation}
 	|\mathbf{v}| = \frac{\sqrt{E^{2} - m^{2}}}{E}.
 \end{equation}
-Thus, in the center-of-momentum frame the external states have speeds
+Thus, in the center-of-momentum frame the external states have speeds,
 \begin{equation}
 \begin{split}
-	|\mathbf{v}_{1}| &= |\mathbf{v}_{3}| = \frac{\sqrt{\Lambda_{12}}}{s + (m_{1} - m_{2})(m_{1} + m_{2})}, \\
-	|\mathbf{v}_{2}| &= |\mathbf{v}_{4}| = \frac{\sqrt{\Lambda_{12}}}{s - (m_{1} - m_{2})(m_{1} + m_{2})}.
+	|\mathbf{v}_{1}| &= |\mathbf{v}_{3}| = \frac{\sqrt{\Lambda_{12}}}{s + m_{1}^{2} - m_{2}^{2}}, \\
+	|\mathbf{v}_{2}| &= |\mathbf{v}_{4}| = \frac{\sqrt{\Lambda_{12}}}{s - m_{1}^{2} + m_{2}^{2}};
 \end{split} \label{4Speeds}
 \end{equation}
-and rapidities $\varphi_{j} \equiv \operatorname{artanh}{(|\mathbf{v}_{j}|)}$ given by
+and rapidities $\varphi_{j} \equiv \operatorname{artanh}{(|\mathbf{v}_{j}|)}$,
 \begin{equation}
 \begin{split}
-	\varphi_{1} &= \varphi_{3} = \frac{1}{2} \log{\left[ \frac{(m_{1} - m_{2})(m_{1} + m_{2}) + s + \sqrt{\Lambda_{12}}}{(m_{1} - m_{2})(m_{1} + m_{2}) + s - \sqrt{\Lambda_{12}}} \right]}, \\
-	\varphi_{2} &= \varphi_{4} = \frac{1}{2} \log{\left[ \frac{(m_{1} - m_{2})(m_{1} + m_{2}) - s - \sqrt{\Lambda_{12}}}{(m_{1} - m_{2})(m_{1} + m_{2}) - s + \sqrt{\Lambda_{12}}} \right]}.
+	\varphi_{1} &= \varphi_{3} = \frac{1}{2} \log{\left[ \frac{s + m_{1}^{2} - m_{2}^{2} + \sqrt{\Lambda_{12}}}{s + m_{1}^{2} - m_{2}^{2} - \sqrt{\Lambda_{12}}} \right]}, \\
+	\varphi_{2} &= \varphi_{4} = \frac{1}{2} \log{\left[ \frac{s - m_{1}^{2} + m_{2}^{2} + \sqrt{\Lambda_{12}}}{s - m_{1}^{2} + m_{2}^{2} - \sqrt{\Lambda_{12}}} \right]}.
 \end{split} \label{4Rapidities}
 \end{equation}
 Note that the sum of the incoming rapidities gives
 \begin{equation}
-	\varphi_{1} + \varphi_{2} = \frac{1}{2} \log{\left[ \frac{m_{1}^{2} + m_{2}^{2} - s - \sqrt{\Lambda_{12}}}{m_{1}^{2} + m_{2}^{2} - s + \sqrt{\Lambda_{12}}} \right]}.
+	\varphi_{1} + \varphi_{2} = \frac{1}{2} \log{\left[ \frac{s - m_{1}^{2} - m_{2}^{2} + \sqrt{\Lambda_{12}}}{s - m_{1}^{2} - m_{2}^{2} - \sqrt{\Lambda_{12}}} \right]}.
 \end{equation}
 Using
 \begin{equation}
-	\frac{(m_{1} + m_{2})^{2} - s - \sqrt{\Lambda_{12}}}{(m_{1} + m_{2})^{2} - s + \sqrt{\Lambda_{12}}} = \frac{2m_{1}m_{2}}{m_{1}^{2} + m_{2}^{2} - s + \sqrt{\Lambda_{12}}} = \frac{m_{1}^{2} + m_{2}^{2} - s - \sqrt{\Lambda_{12}}}{2m_{1}m_{2}};
+	\frac{s - (m_{1} + m_{2})^{2} + \sqrt{\Lambda_{12}}}{s - (m_{1} + m_{2})^{2} - \sqrt{\Lambda_{12}}} = -\frac{2m_{1}m_{2}}{s - m_{1}^{2} - m_{2}^{2} - \sqrt{\Lambda_{12}}} = -\frac{s - m_{1}^{2} - m_{2}^{2} + \sqrt{\Lambda_{12}}}{2m_{1}m_{2}};
 \end{equation}
 we can also write
 \begin{equation}
-	\varphi_{1} + \varphi_{2} = \log{\left[ \frac{(m_{1} + m_{2})^{2} - s - \sqrt{\Lambda_{12}}}{(m_{1} + m_{2})^{2} - s + \sqrt{\Lambda_{12}}} \right]}.
+	\varphi_{1} + \varphi_{2} = \log{\left[ \frac{s - (m_{1} + m_{2})^{2} + \sqrt{\Lambda_{12}}}{s - (m_{1} + m_{2})^{2} - \sqrt{\Lambda_{12}}} \right]}.
 	\label{rap12}
 \end{equation}
 The cosine of the angle between $\mathbf{p}_{1}$ and $\mathbf{p}_{3}$ is given by
